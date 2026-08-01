@@ -29,7 +29,7 @@ class LlmClient:
     """
 
     def __init__(self):
-        self.apiKey = os.environ.get("HERMES_CUSTOM_AI_SPURIC_COM_API_KEY", "REDACTED-SECRET-REMOVED")
+        self.apiKey = os.environ.get("HERMES_CUSTOM_AI_SPURIC_COM_API_KEY", "")
         self.baseUrl = os.environ.get("LLM_BASE_URL", "https://ai.spuric.com/v1/")
         self.modelName = os.environ.get("LLM_MODEL", "spur-gemma4")
         self._client = None
